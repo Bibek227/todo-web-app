@@ -1,7 +1,7 @@
 import { TodoProvider } from "./context";
 import "./App.css";
 import { useEffect, useState } from "react";
-
+import { Analytics } from "@vercel/analytics/react"
 import { TodoForm, TodoItem } from "./components";
 
 function App() {
@@ -54,6 +54,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Analytics/>
     </TodoProvider>
   );
 }
